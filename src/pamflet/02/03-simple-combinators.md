@@ -33,7 +33,7 @@ c: scodec.Codec[Unit] = constant(BitVector(4 bits, 0xe))
 
 ## Unit Codecs
 
-Any codec can be turned in to a unit codec -- that is, a `Codec[Unit]` -- using the `unit` method on the `Codec` type. The resulting codec encodes and decodes using the original codec, but the decoded value is thrown away, and the value to encode is "fixed" at tht time the unit codec is generated.
+Any codec can be turned in to a unit codec -- that is, a `Codec[Unit]` -- using the `unit` method on the `Codec` type. The resulting codec encodes and decodes using the original codec, but the decoded value is thrown away, and the value to encode is "fixed" at the time the unit codec is generated.
 
 For example:
 
